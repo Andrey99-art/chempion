@@ -7,7 +7,7 @@
 import { useEffect, useState } from "react";
 import { X, ExternalLink, Save, Loader2 } from "lucide-react";
 import { getClient, updateClient, getTrainers } from "../lib/tauri";
-import { formatDate, formatPhone } from "../lib/formatters";
+import { formatDate } from "../lib/formatters";
 import { useUIStore } from "../store/uiStore";
 import SubscriptionBadge from "./SubscriptionBadge";
 import type { Client, User } from "../types";

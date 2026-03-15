@@ -6,7 +6,6 @@
 import { useEffect, useState } from "react";
 import { Plus, Save, UserPlus, Shield, Dumbbell, HardDriveDownload, HardDriveUpload, Upload } from "lucide-react";
 import { open as openDialog } from "@tauri-apps/plugin-dialog";
-import { convertFileSrc } from "@tauri-apps/api/core";
 import {
   getSubscriptionTypes,
   createSubscriptionType,

@@ -23,8 +23,7 @@ import {
 import { useAuthStore } from "../store/authStore";
 import { useUIStore } from "../store/uiStore";
 import { useEffect, useState } from "react";
-import { convertFileSrc } from "@tauri-apps/api/core";
-import { getLogoPath } from "../lib/tauri";
+import { getLogoBase64 } from "../lib/tauri";
 import { getLogoBase64 } from "../lib/tauri";
 
 /** Один пункт навигации */

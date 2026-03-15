@@ -4,7 +4,7 @@
 // Шаги: 1) Выбор файла → 2) Маппинг столбцов → 3) Предпросмотр → 4) Результат.
 
 import { useState } from "react";
-import { FileSpreadsheet, Upload, CheckCircle, AlertCircle, ArrowRight, ArrowLeft } from "lucide-react";
+import { FileSpreadsheet, Upload, CheckCircle, ArrowRight, ArrowLeft } from "lucide-react";
 import { open } from "@tauri-apps/plugin-dialog";
 import {
   getExcelColumns,
