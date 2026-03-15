@@ -1,0 +1,51 @@
+[package]
+name = "gym-champion"
+version = "0.1.0"
+description = "GymChampion — учёт клиентов тренажёрного зала"
+authors = ["Andrey"]
+edition = "2021"
+
+[lib]
+name = "gym_champion_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# Фреймворк Tauri — ядро десктопного приложения
+tauri = { version = "2", features = [] }
+# Плагин для открытия файлов/ссылок через системные средства
+tauri-plugin-opener = "2"
+# Плагин для системных диалогов (выбор файла, папки, подтверждение)
+tauri-plugin-dialog = "2"
+# Плагин для доступа к файловой системе (чтение/запись файлов)
+tauri-plugin-fs = "2"
+
+# Сериализация/десериализация структур в JSON (для обмена с фронтендом)
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# SQLite — встроенная база данных, bundled = SQLite компилируется вместе с приложением
+rusqlite = { version = "0.35", features = ["bundled"] }
+
+# Хэширование паролей (bcrypt) — безопасное хранение паролей пользователей
+bcrypt = "0.17"
+
+# Работа с датой и временем (форматирование, парсинг ISO 8601)
+chrono = { version = "0.4", features = ["serde"] }
+
+# Чтение Excel-файлов (.xlsx) — для импорта данных из старых таблиц
+calamine = "0.34"
+
+# Запись Excel-файлов (.xlsx) — для экспорта отчётов и списков
+rust_xlsxwriter = "0.94"
+
+# Генерация уникальных идентификаторов (UUID v4) — для имён файлов фото
+uuid = { version = "1", features = ["v4"] }
+
+# Определение системных папок (AppData на Windows, ~/.local/share на Linux)
+dirs = "6"
+
+# Кодирование в base64 (для логотипа)
+base64 = "0.22"
