@@ -24,7 +24,6 @@ import { useAuthStore } from "../store/authStore";
 import { useUIStore } from "../store/uiStore";
 import { useEffect, useState } from "react";
 import { getLogoBase64 } from "../lib/tauri";
-import { getLogoBase64 } from "../lib/tauri";
 
 /** Один пункт навигации */
 interface NavItem {
